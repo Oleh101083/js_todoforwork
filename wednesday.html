@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css" />
+		<title>wednesday</title>
+	</head>
+	<body>
+		<!-- container -->
+		<div class="container">
+			<!-- Заголовок -->
+			<div class="top">
+				<ul class="wrap">
+					<li><a href="index.html">Понеділок</a></li>
+					<li><a href="tuesday.html">Вівторок</a></li>
+					<li><a href="wednesday.html">Середа</a></li>
+					<li><a href="thursday.html">Четвер</a></li>
+					<li><a href="friday.html">П'ятниця</a></li>
+				</ul>
+			</div>
+			
+			<div class="display-4 mb-2">Середа</div>
+			<div class="h4 mb-5"><p id="p1"></p>
+				<p id="p2"></p></div>
+
+				<div class="stopwatch">
+					<div class="display">
+						<span class="minutes">00</span><span>:</span> <span class="seconds">00</span><span>:</span><span class="centiseconds">00</span>
+					</div>
+					<div class="controls">
+						<button class="start">Start</button>
+						<button class="stop">Stop</button>
+						<button class="reset">Reset</button>
+					</div>	
+				</div>
+
+			<!-- Список задач -->
+			<div class="card mb-4">
+				<ul id="list-group" class="list-group list-group-flush">
+					<li id="empty-list-item" class="list-group-item text-center">Список дел пуст</li>
+				</ul>
+			</div>
+			<!-- // Список задач -->
+
+			<!-- Форма добавления новых задач -->
+			<div class="card bg-light">
+				<div class="card-header">&#9998;Add</div>
+				<div class="card-body">
+					<form id="newTaskForm">
+						<div class="form-group">
+							<input type="text" class="form-control" id="addNewTask" placeholder="Текст" autofocus required />
+							
+						</div>
+						<button type="submit" class="btn btn-primary btn-lg active">&#10010;</button>
+					</form>
+				</div>
+			</div>
+			<!-- // Форма добавления новых задач -->
+
+			
+			
+		</div>
+		<!-- // container -->
+		<script src="js/main2.js"></script>
+	</body>
+</html>
